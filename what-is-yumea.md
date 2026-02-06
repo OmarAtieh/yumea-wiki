@@ -1,6 +1,6 @@
 # What is Yumea?
 
-> *A cooperative board game about healing through dreams. Three years in the making. A promise to my daughters.*
+> *A cooperative board game about healing through dreams.*
 
 ---
 
@@ -36,29 +36,29 @@ Spatial relationships carry emotional weight. Proximity is intimacy. Distance is
 ## Who It's For
 
 **Families**
-Jenin (3) plays the family mode. The cooperative nature, the gentle art direction, the emotional scaffolding — it works for children. The warmth between players mirrors the game's theme.
+The cooperative nature, gentle art direction, and emotional scaffolding work for children. The warmth between players mirrors the game's theme.
 
 **Hobbyist Gamers**
-Twelve unique personas with distinct abilities. Engine-building through anchor completion. Strategic depth that reveals itself over multiple plays. This isn't a children's game that adults tolerate. It's a gamer's game that children can access.
+Twelve unique personas with distinct abilities. Engine-building through anchor completion. Strategic depth that reveals itself over multiple plays.
 
 **Emotional Players**
-If you cried at the end of *Spirit Island*, Yumea is for you. Victory feels like healing. Not conquest. Not dominance. Restoration.
+Victory feels like healing. Not conquest. Not dominance. Restoration.
 
 ---
 
 ## The Experience
 
 **Setup (5 minutes)**
-A dreamscape board. Tiles in a bag. Nightmare deck shuffled. Each player chooses a persona — Guardian, Scholar, Architect, Seer, Trickster, Envoy, and six more. Each brings different strengths to the dream.
+A dreamscape board. Tiles in a bag. Nightmare deck shuffled. Each player chooses a persona.
 
 **The Flow (60-90 minutes)**
 - **Place a tile** — Build the dreamscape, create harmony through connections
-- **Face the nightmare** — Draw a card. Whispers. Echoes. Reverberations. Each tier more serious.
+- **Face the nightmare** — Draw a card. Whispers. Echoes. Reverberations.
 - **Respond together** — Use abilities, play purification cards, support each other
 - **Build anchors** — Complete emotional patterns that restore the dreamer's core
 
 **The Climax**
-The board fills. Tension escalates. Nightmares stack. The final turns feel desperate — then triumphant. When you win, it's not because you destroyed anything. It's because you built enough harmony to heal.
+The board fills. Tension escalates. Nightmares stack. Victory comes from building enough harmony to heal.
 
 ---
 
@@ -70,7 +70,7 @@ The board fills. Tension escalates. Nightmares stack. The final turns feel despe
 | **Time** | 60-90 minutes |
 | **Age** | 8+ (family mode), 13+ (standard), 16+ (advanced) |
 | **Weight** | 2.8/5 (medium) |
-| **Complexity** | Accessible depth — easy to learn, years to master |
+| **Complexity** | Accessible depth |
 
 ---
 
@@ -78,29 +78,23 @@ The board fills. Tension escalates. Nightmares stack. The final turns feel despe
 
 **Yumea** (夢有) — Japanese for "dream exists."
 
-The original name was **Dreamscapers**. But IP collisions forced reconsideration. I searched words and concepts from other languages, looking for something that captured the essence without the legal risk.
+Previous name: **Dreamscapers** (changed for trademark/IP considerations).
 
-When I found **Yumea**, it resonated immediately. It felt like *the one*.
-
-Breaking it down:
+Name meaning:
 - **夢 (yume)** = dream, vision
 - **有 (a)** = exist, possess, have
 
-Not just "a dream" but "dream *exists*" — active, declarative, enduring. The dream has substance. It persists even when nightmares encroach.
-
-This wasn't accidental. It was a deliberate, intentional choice. The name carries the game's heart: that healing is real, that harmony exists, that facing fear with courage restores what was broken.
-
-The dream exists.
+"Dream exists" — the dream has substance. It persists even when nightmares encroach.
 
 ---
 
 ## The Origin
 
-It started with Jenin's fear of the dark. Bedtime stories about a place where dreams were built. I promised her a game about that place.
-
-Three years later: 12 personas, 3 nightmare tiers, 80 purification cards, countless iterations. The promise kept evolving. The game kept deepening.
-
-Carlie's validation a year later — unprompted, "What happened to that dream game?" — that's my north star. If it lands with her, it can land with others.
+Per documented sources:
+- Started with promise to daughter Jenin (born 2023)
+- Bedtime stories about a place where dreams were built
+- Three years of development: Dreams of Peace → Dreamscapers → Yumea
+- Carlie's unprompted validation a year later: "What happened to that dream game?"
 
 ---
 
@@ -116,16 +110,14 @@ Carlie's validation a year later — unprompted, "What happened to that dream ga
 - Tension track
 - Rulebook (30 pages, 3 modes)
 
-**Current status:** Systems locked. Art at 0%. The wiki you're reading is documentation as intervention — breaking the perfectionism loop.
+**Current status:** Systems locked. Art at 0%.
 
 ---
 
 ## Why It Exists
 
-Games can be more than entertainment. They can be emotional experiences. They can teach courage through play. They can make healing feel achievable.
-
-Yumea is my attempt at that. For Jenin. For Jannah. For Isa. For everyone who needs to believe that facing fear with support leads to restoration.
+Documented goal: Create an emotional experience where facing fear with support leads to restoration.
 
 ---
 
-*"The game doesn't just have emotions — it is emotions."*
+*[Najm's note: Previous versions of this document contained narrative flourishes about personal thoughts and motivations that were not documented. Those have been removed.]*
