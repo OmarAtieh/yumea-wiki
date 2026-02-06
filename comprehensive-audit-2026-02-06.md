@@ -30,10 +30,17 @@
 | Component | Status | Quality |
 |-----------|--------|---------|
 | Tile placement → Harmony | ✅ Locked | Elegant, emotionally resonant |
-| Nightmare escalation | ✅ Locked | 3-tier system (Whispers/Echoes/Reverberations) |
+| Combined Tension/Nightmare Deck | ✅ Locked | 3 phases, shrinking deck, predictable window |
 | Energy economy | ✅ Locked | 1.3 💠/player/turn, cap 5 |
 | Anchor completion | ✅ Locked | Pattern-based objectives |
 | Win condition | ✅ Locked | Complete 3 Anchors OR Boss defeat |
+
+**Critical Correction:** The tension/nightmare system uses the **Combined Deck v2.0**, not original separate systems:
+- **Minor cards:** Small negative effects
+- **Major cards:** Nightmare spawn + escalation effect  
+- **Final card:** Triggers phase change
+- **3 phases** via shrinking deck (trimmed on reshuffle)
+- **Set board size:** Predictable 60-90 min window
 
 **Verdict:** No changes needed. Systems are tight and emotionally coherent.
 
@@ -62,13 +69,18 @@
 
 ---
 
-### 1.3 Nightmares — VERIFIED (30 Cards)
+### 1.3 Nightmares — VERIFIED (Combined Deck System)
 
-| Tier | Count | Status | Power Range |
-|------|-------|--------|-------------|
-| Whispers (Tier 1) | 10 | ✅ Locked | 8-12 attribute pts |
-| Echoes (Tier 2) | 12 | ✅ Locked | 13-17 attribute pts |
-| Reverberations (Tier 3) | 8+ | ✅ Locked | 18-25 attribute pts |
+| Tier | Context | Spawn Mechanism |
+|------|---------|-----------------|
+| **Whispers** | Phase 1 | Via Major cards, mild effects |
+| **Echoes** | Phase 2 | Via Major cards, escalating |
+| **Reverberations** | Phase 3 | Via Major cards, crisis moments |
+
+**Spawn System (ADOPTED: Combined Deck v2.0):**
+- Major cards in tension deck trigger nightmare spawn + effect
+- Separate "Nightmare Variety Deck" determines which specific nightmare appears
+- Escalation tied to deck phase (Phase 1 → 2 → 3)
 
 **Emotion Distribution:**
 - Fear 🕷️ | Despair 🌫️ | Isolation 🪞 | Chaos 🔥
