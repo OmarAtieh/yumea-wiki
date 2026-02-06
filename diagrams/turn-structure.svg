@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900">
+  <defs>
+    <!-- Watercolor filter -->
+    <filter id="watercolor" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <!-- Soft glow -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Phase gradients -->
+    <linearGradient id="phase1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#E8D5B7"/>
+    </linearGradient>
+    
+    <linearGradient id="phase2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B7"/>
+      <stop offset="100%" stop-color="#F4E4C1"/>
+    </linearGradient>
+    
+    <linearGradient id="phase3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E07A5F"/>
+      <stop offset="100%" stop-color="#F2CC8F"/>
+    </linearGradient>
+    
+    <linearGradient id="phase4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#98C1D9"/>
+      <stop offset="100%" stop-color="#3D5A80"/>
+    </linearGradient>
+    
+    <linearGradient id="phase5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6D6875"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="900" fill="#FDFBF7"/>
+  
+  <!-- Watercolor washes -->
+  <ellipse cx="400" cy="200" rx="300" ry="100" fill="#E8D5B7" opacity="0.2" filter="url(#watercolor)"/>
+  <ellipse cx="200" cy="500" rx="150" ry="200" fill="#98C1D9" opacity="0.15" filter="url(#watercolor)"/>
+  <ellipse cx="600" cy="700" rx="180" ry="150" fill="#D4A574" opacity="0.2" filter="url(#watercolor)"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#2B2D42" font-weight="bold">Turn Structure</text>
+  <text x="400" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6D6875" font-style="italic">Phase by phase flow through the dreamscape</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowDown" markerWidth="10" markerHeight="10" refX="5" refY="10" orient="auto">
+      <polygon points="0 0, 10 0, 5 10" fill="#6D6875"/>
+    </marker>
+    <marker id="arrowRight" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#6D6875"/>
+    </marker>
+    <marker id="arrowLeft" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto">
+      <polygon points="10 0, 0 5, 10 10" fill="#6D6875"/>
+    </marker>
+  </defs>
+  
+  <!-- PHASE 1: Tile Draw & Placement -->
+  <g transform="translate(400, 130)">
+    <ellipse cx="0" cy="40" rx="140" ry="55" fill="url(#phase1Grad)" opacity="0.4" filter="url(#watercolor)"/>
+    <rect x="-130" y="0" width="260" height="80" rx="12" fill="url(#phase1Grad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-130" y="0" width="260" height="80" rx="12" fill="none" stroke="#D4A574" stroke-width="2"/>
+    
+    <text x="0" y="25" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2B2D42" font-weight="bold">Phase 1: Draw &amp; Place</text>
+    <text x="0" y="42" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Draw terrain tile • Place on hex grid</text>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Match edges for harmony bonus</text>
+    <text x="0" y="68" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" font-style="italic">💠 Energy gained based on matches</text>
+  </g>
+  
+  <!-- Arrow 1→2 -->
+  <line x1="400" y1="220" x2="400" y2="245" stroke="#6D6875" stroke-width="2" marker-end="url(#arrowDown)"/>
+  
+  <!-- PHASE 2: Blueprint/Anchor Check -->
+  <g transform="translate(400, 260)">
+    <ellipse cx="0" cy="40" rx="140" ry="55" fill="url(#phase2Grad)" opacity="0.4" filter="url(#watercolor)"/>
+    <rect x="-130" y="0" width="260" height="80" rx="12" fill="url(#phase2Grad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-130" y="0" width="260" height="80" rx="12" fill="none" stroke="#E8D5B7" stroke-width="2"/>
+    
+    <text x="0" y="25" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2B2D42" font-weight="bold">Phase 2: Blueprint Check</text>
+    <text x="0" y="42" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Did placement complete a pattern?</text>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">If YES → Activate Anchor bonus</text>
+    <text x="0" y="68" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" font-style="italic">🏛️ Small → Medium → Large tiers</text>
+  </g>
+  
+  <!-- Decision diamond -->
+  <g transform="translate(400, 365)">
+    <polygon points="0,-20 30,0 0,20 -30,0" fill="#F4E4C1" stroke="#D4A574" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42" font-weight="bold">Anchor?</text>
+  </g>
+  
+  <!-- Arrow 2→Decision -->
+  <line x1="400" y1="350" x2="400" y2="345" stroke="#6D6875" stroke-width="2"/>
+  
+  <!-- Branch: No anchor -->
+  <line x1="370" y1="365" x2="280" y2="365" stroke="#6D6875" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="325" y="358" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">No</text>
+  
+  <!-- Branch: Yes anchor -->
+  <line x1="430" y1="365" x2="520" y2="365" stroke="#6D6875" stroke-width="1.5"/>
+  <text x="475" y="358" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">Yes</text>
+  
+  <!-- Anchor bonus box -->
+  <g transform="translate(590, 365)">
+    <rect x="-60" y="-25" width="120" height="50" rx="8" fill="#F4E4C1" stroke="#D4A574" stroke-width="1.5" opacity="0.9"/>
+    <text x="0" y="-5" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Gain Harmony 🕊️</text>
+    <text x="0" y="10" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">+ Choose bonus effect</text>
+  </g>
+  
+  <line x1="520" y1="365" x2="530" y2="365" stroke="#6D6875" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  
+  <!-- Merge arrow -->
+  <line x1="400" y1="385" x2="400" y2="420" stroke="#6D6875" stroke-width="2" marker-end="url(#arrowDown)"/>
+  
+  <!-- PHASE 3: Tension & Nightmares -->
+  <g transform="translate(400, 455)">
+    <ellipse cx="0" cy="45" rx="150" ry="60" fill="url(#phase3Grad)" opacity="0.35" filter="url(#watercolor)"/>
+    <rect x="-140" y="0" width="280" height="90" rx="12" fill="url(#phase3Grad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-140" y="0" width="280" height="90" rx="12" fill="none" stroke="#E07A5F" stroke-width="2"/>
+    
+    <text x="0" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2B2D42" font-weight="bold">Phase 3: Tension Escalation</text>
+    <text x="0" y="40" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Draw Tension card • Check for surge</text>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Spawn nightmares • Advance fray tokens</text>
+    <text x="0" y="72" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#D62828" font-style="italic">⚠️ At 0 fray: Corruption spreads!</text>
+  </g>
+  
+  <!-- Arrow 3→4 -->
+  <line x1="400" y1="555" x2="400" y2="580" stroke="#6D6875" stroke-width="2" marker-end="url(#arrowDown)"/>
+  
+  <!-- PHASE 4: Purification (Optional) -->
+  <g transform="translate(400, 610)">
+    <ellipse cx="0" cy="40" rx="140" ry="55" fill="url(#phase4Grad)" opacity="0.3" filter="url(#watercolor)"/>
+    <rect x="-130" y="0" width="260" height="80" rx="12" fill="url(#phase4Grad)" opacity="0.85" filter="url(#softGlow)"/>
+    <rect x="-130" y="0" width="260" height="80" rx="12" fill="none" stroke="#3D5A80" stroke-width="2"/>
+    
+    <text x="0" y="25" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#FDFBF7" font-weight="bold">Phase 4: Purification</text>
+    <text x="0" y="42" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FDFBF7">Optional: Spend 💠 to play cards</text>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FDFBF7">Cleanse corrupted tiles</text>
+    <text x="0" y="68" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9" font-style="italic">Match emotion: Fear→Courage, Despair→Hope</text>
+  </g>
+  
+  <!-- Decision: Purify? -->
+  <g transform="translate(400, 710)">
+    <polygon points="0,-18 28,0 0,18 -28,0" fill="#98C1D9" stroke="#3D5A80" stroke-width="2" opacity="0.9"/>
+    <text x="0" y="4" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FDFBF7" font-weight="bold">Purify?</text>
+  </g>
+  
+  <!-- Branch: Skip -->
+  <line x1="372" y1="710" x2="290" y2="710" stroke="#6D6875" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="331" y="703" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">Skip</text>
+  
+  <!-- Branch: Purify -->
+  <line x1="428" y1="710" x2="510" y2="710" stroke="#6D6875" stroke-width="1.5"/>
+  <text x="469" y="703" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">Act</text>
+  
+  <!-- Purification effect -->
+  <g transform="translate(580, 710)">
+    <rect x="-55" y="-20" width="110" height="40" rx="8" fill="#3D5A80" stroke="#98C1D9" stroke-width="1.5" opacity="0.9"/>
+    <text x="0" y="-2" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#FDFBF7">Remove corruption</text>
+    <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9">Defeat nightmares</text>
+  </g>
+  
+  <line x1="510" y1="710" x2="525" y2="710" stroke="#6D6875" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+  
+  <!-- Merge to Phase 5 -->
+  <line x1="400" y1="728" x2="400" y2="755" stroke="#6D6875" stroke-width="2" marker-end="url(#arrowDown)"/>
+  
+  <!-- PHASE 5: Dream Phase Check -->
+  <g transform="translate(400, 800)">
+    <ellipse cx="0" cy="35" rx="140" ry="50" fill="url(#phase5Grad)" opacity="0.4" filter="url(#watercolor)"/>
+    <rect x="-130" y="0" width="260" height="70" rx="12" fill="url(#phase5Grad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-130" y="0" width="260" height="70" rx="12" fill="none" stroke="#6D6875" stroke-width="2"/>
+    
+    <text x="0" y="22" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2B2D42" font-weight="bold">Phase 5: Dream Phase</text>
+    <text x="0" y="40" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Check board fill % → Advance phase?</text>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" font-style="italic">Fog → Emergence → Resonance (Boss)</text>
+  </g>
+  
+  <!-- End turn arrow looping -->
+  <path d="M 530 835 Q 650 835 650 700 Q 650 100 400 100" stroke="#6D6875" stroke-width="1.5" fill="none" stroke-dasharray="5,5" opacity="0.5"/>
+  <text x="650" y="500" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-style="italic">Next Player</text>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 830)">
+    <text x="0" y="0" font-family="sans-serif" font-size="10" fill="#6D6875" font-weight="bold">Symbols:</text>
+    <text x="0" y="15" font-family="sans-serif" font-size="9" fill="#2B2D42">🕊️ Harmony (score/victory)</text>
+    <text x="0" y="28" font-family="sans-serif" font-size="9" fill="#2B2D42">💠 Energy (actions)</text>
+    <text x="0" y="41" font-family="sans-serif" font-size="9" fill="#2B2D42">🏛️ Anchor (completed structure)</text>
+  </g>
+</svg>

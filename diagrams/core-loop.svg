@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dreamlike watercolor gradients -->
+    <radialGradient id="harmonyGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#F4E4C1"/>
+      <stop offset="50%" stop-color="#E8D5B7"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </radialGradient>
+    <radialGradient id="tensionGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#F2CC8F"/>
+      <stop offset="50%" stop-color="#E07A5F"/>
+      <stop offset="100%" stop-color="#D62828"/>
+    </radialGradient>
+    <radialGradient id="nightmareGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#98C1D9"/>
+      <stop offset="50%" stop-color="#3D5A80"/>
+      <stop offset="100%" stop-color="#1D3557"/>
+    </radialGradient>
+    <radialGradient id="purificationGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#A8D5BA"/>
+      <stop offset="50%" stop-color="#6B9B7A"/>
+      <stop offset="100%" stop-color="#4A7C59"/>
+    </radialGradient>
+    
+    <!-- Soft shadows for depth -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="offsetblur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Glow effects -->
+    <filter id="harmonyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background - warm white with subtle vignette -->
+  <rect width="800" height="800" fill="#FDFBF7"/>
+  <radialGradient id="bgVignette" cx="50%" cy="50%" r="70%">
+    <stop offset="70%" stop-color="#FDFBF7" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#E8D5B7" stop-opacity="0.3"/>
+  </radialGradient>
+  <rect width="800" height="800" fill="url(#bgVignette)"/>
+  
+  <!-- Title -->
+  <text x="400" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#2B2D42" font-weight="bold">YUMEA CORE LOOP</text>
+  <text x="400" y="85" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#6D6875" font-style="italic">The heartbeat of the dreamscape</text>
+  
+  <!-- Central decorative element -->
+  <circle cx="400" cy="400" r="180" fill="none" stroke="#D4A574" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="5,5"/>
+  <circle cx="400" cy="400" r="140" fill="none" stroke="#6D6875" stroke-width="1" stroke-opacity="0.2"/>
+  
+  <!-- === PHASE 1: TILE PLACEMENT (Harmony - Gold) === -->
+  <g transform="translate(400, 200)" filter="url(#softShadow)">
+    <!-- Node circle -->
+    <circle cx="0" cy="0" r="65" fill="url(#harmonyGrad)" stroke="#D4A574" stroke-width="2"/>
+    <!-- Icon: Hex tile -->
+    <g transform="translate(-20, -15)" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round">
+      <polygon points="0,-15 13,-7.5 13,7.5 0,15 -13,7.5 -13,-7.5" fill="#FDFBF7" fill-opacity="0.6"/>
+      <line x1="0" y1="-15" x2="0" y2="-5"/>
+      <line x1="13" y1="-7.5" x2="5" y2="-2.5"/>
+      <line x1="13" y1="7.5" x2="5" y2="2.5"/>
+    </g>
+    <text x="0" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">TILE</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">PLACEMENT</text>
+  </g>
+  
+  <!-- === PHASE 2: HARMONY CALCULATION (Harmony - Gold) === -->
+  <g transform="translate(570, 285)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="65" fill="url(#harmonyGrad)" stroke="#D4A574" stroke-width="2"/>
+    <!-- Icon: Harmony waves -->
+    <g transform="translate(-18, -12)" fill="none" stroke="#2B2D42" stroke-width="2" stroke-linecap="round">
+      <path d="M0,0 Q10,-8 20,0 Q30,8 40,0" stroke-width="2.5"/>
+      <path d="M5,10 Q15,2 25,10 Q35,18 45,10"/>
+      <path d="M10,20 Q20,12 30,20 Q40,28 50,20"/>
+    </g>
+    <text x="0" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#2B2D42" font-weight="bold">HARMONY</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#2B2D42" font-weight="bold">CALCULATION</text>
+  </g>
+  
+  <!-- === PHASE 3: TENSION CHECK (Tension - Orange/Red) === -->
+  <g transform="translate(570, 515)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="65" fill="url(#tensionGrad)" stroke="#E07A5F" stroke-width="2"/>
+    <!-- Icon: Lightning/thunder -->
+    <g transform="translate(-8, -18)" fill="#2B2D42">
+      <path d="M5,0 L-5,15 L2,15 L-3,28 L12,10 L5,10 L10,0 Z"/>
+    </g>
+    <text x="0" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">TENSION</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">CHECK</text>
+  </g>
+  
+  <!-- === PHASE 4: NIGHTMARE MANIFEST (Nightmare - Blue) === -->
+  <g transform="translate(400, 600)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="65" fill="url(#nightmareGrad)" stroke="#3D5A80" stroke-width="2"/>
+    <!-- Icon: Nightmare silhouette -->
+    <g transform="translate(-15, -20)" fill="#FDFBF7" fill-opacity="0.9">
+      <path d="M0,30 Q5,10 15,5 Q25,0 30,10 Q35,20 30,30 Q25,35 20,32 Q15,35 10,32 Q5,35 0,30 Z"/>
+      <circle cx="18" cy="15" r="2" fill="#1D3557"/>
+      <circle cx="26" cy="18" r="1.5" fill="#1D3557"/>
+      <path d="M5,25 L-5,20 M8,28 L-2,30" stroke="#FDFBF7" stroke-width="1.5" fill="none" opacity="0.6"/>
+    </g>
+    <text x="0" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#FDFBF7" font-weight="bold">NIGHTMARE</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#FDFBF7" font-weight="bold">MANIFEST</text>
+  </g>
+  
+  <!-- === PHASE 5: PURIFICATION RESPONSE (Purification - Green) === -->
+  <g transform="translate(230, 515)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="65" fill="url(#purificationGrad)" stroke="#6B9B7A" stroke-width="2"/>
+    <!-- Icon: Purification light/sparkle -->
+    <g transform="translate(-12, -15)" fill="none" stroke="#FDFBF7" stroke-width="2" stroke-linecap="round">
+      <circle cx="12" cy="12" r="8" fill="#FDFBF7" fill-opacity="0.3"/>
+      <line x1="12" y1="0" x2="12" y2="-8"/>
+      <line x1="12" y1="24" x2="12" y2="32"/>
+      <line x1="0" y1="12" x2="-8" y2="12"/>
+      <line x1="24" y1="12" x2="32" y2="12"/>
+      <line x1="3.5" y1="3.5" x2="-2" y2="-2"/>
+      <line x1="20.5" y1="20.5" x2="26" y2="26"/>
+      <line x1="20.5" y1="3.5" x2="26" y2="-2"/>
+      <line x1="3.5" y1="20.5" x2="-2" y2="26"/>
+    </g>
+    <text x="0" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#2B2D42" font-weight="bold">PURIFICATION</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#2B2D42" font-weight="bold">RESPONSE</text>
+  </g>
+  
+  <!-- === PHASE 6: ENERGY GAIN / LOOP BACK (Harmony - Gold) === -->
+  <g transform="translate(230, 285)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="65" fill="url(#harmonyGrad)" stroke="#D4A574" stroke-width="2"/>
+    <!-- Icon: Energy crystal -->
+    <g transform="translate(-12, -18)" fill="#FDFBF7" fill-opacity="0.8">
+      <polygon points="12,0 24,8 24,20 12,28 0,20 0,8" stroke="#2B2D42" stroke-width="1.5" fill="none"/>
+      <polygon points="12,0 12,14 24,8" fill="#F4E4C1" fill-opacity="0.6"/>
+      <polygon points="12,14 12,28 24,20 24,8" fill="#D4A574" fill-opacity="0.4"/>
+      <polygon points="12,14 0,8 0,20 12,28" fill="#E8D5B7" fill-opacity="0.5"/>
+    </g>
+    <text x="0" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">ENERGY</text>
+    <text x="0" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">GAIN</text>
+  </g>
+  
+  <!-- === CONNECTING ARROWS === -->
+  <!-- Arrow 1: Tile Placement → Harmony Calculation -->
+  <path d="M 455 235 Q 510 245 530 260" fill="none" stroke="#D4A574" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowGold)"/>
+  
+  <!-- Arrow 2: Harmony → Tension -->
+  <path d="M 585 350 Q 590 400 585 450" fill="none" stroke="#E07A5F" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+  
+  <!-- Arrow 3: Tension → Nightmare -->
+  <path d="M 530 540 Q 480 570 455 565" fill="none" stroke="#E07A5F" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+  
+  <!-- Arrow 4: Nightmare → Purification -->
+  <path d="M 345 565 Q 300 570 270 540" fill="none" stroke="#3D5A80" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  
+  <!-- Arrow 5: Purification → Energy -->
+  <path d="M 230 450 Q 225 400 230 350" fill="none" stroke="#6B9B7A" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+  
+  <!-- Arrow 6: Energy → Loop back to Tile Placement -->
+  <path d="M 270 260 Q 320 220 360 215" fill="none" stroke="#D4A574" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowGold)"/>
+  
+  <!-- Arrow markers definition -->
+  <defs>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#D4A574"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#E07A5F"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3D5A80"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6B9B7A"/>
+    </marker>
+  </defs>
+  
+  <!-- === PHASE LABELS & ICONS === -->
+  <!-- Harmony indicators between nodes -->
+  <circle cx="505" cy="315" r="12" fill="#FDFBF7" stroke="#D4A574" stroke-width="2"/>
+  <text x="505" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42">🕊️</text>
+  
+  <circle cx="505" cy="485" r="12" fill="#FDFBF7" stroke="#E07A5F" stroke-width="2"/>
+  <text x="505" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42">⚡</text>
+  
+  <circle cx="400" cy="575" r="12" fill="#FDFBF7" stroke="#3D5A80" stroke-width="2"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42">🧿</text>
+  
+  <circle cx="295" cy="485" r="12" fill="#FDFBF7" stroke="#6B9B7A" stroke-width="2"/>
+  <text x="295" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42">✨</text>
+  
+  <circle cx="295" cy="315" r="12" fill="#FDFBF7" stroke="#D4A574" stroke-width="2"/>
+  <text x="295" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42">💠</text>
+  
+  <circle cx="360" cy="215" r="12" fill="#FDFBF7" stroke="#D4A574" stroke-width="2"/>
+  <text x="360" y="220" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42">🔷</text>
+  
+  <!-- === LEGEND === -->
+  <g transform="translate(50, 680)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="14" fill="#2B2D42" font-weight="bold">Phase Colors</text>
+    
+    <circle cx="10" cy="25" r="8" fill="#D4A574"/>
+    <text x="25" y="30" font-family="Georgia, serif" font-size="11" fill="#2B2D42">Harmony (Creation)</text>
+    
+    <circle cx="10" cy="50" r="8" fill="#E07A5F"/>
+    <text x="25" y="55" font-family="Georgia, serif" font-size="11" fill="#2B2D42">Tension (Escalation)</text>
+    
+    <circle cx="150" cy="25" r="8" fill="#3D5A80"/>
+    <text x="165" y="30" font-family="Georgia, serif" font-size="11" fill="#2B2D42">Nightmare (Threat)</text>
+    
+    <circle cx="150" cy="50" r="8" fill="#6B9B7A"/>
+    <text x="165" y="55" font-family="Georgia, serif" font-size="11" fill="#2B2D42">Purification (Response)</text>
+  </g>
+  
+  <!-- === FOOTER NOTE === -->
+  <text x="400" y="780" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6D6875" font-style="italic">
+    "Every action echoes through the dreamscape — choose wisely, dream together."
+  </text>
+</svg>

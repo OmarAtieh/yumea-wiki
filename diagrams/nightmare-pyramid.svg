@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 700 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for Whispers (base tier - subtle) -->
+    <linearGradient id="whispersGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#98C1D9"/>
+      <stop offset="100%" stop-color="#3D5A80"/>
+    </linearGradient>
+    
+    <!-- Gradient for Echoes (middle tier - intense) -->
+    <linearGradient id="echoesGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6A8CB5"/>
+      <stop offset="50%" stop-color="#3D5A80"/>
+      <stop offset="100%" stop-color="#2A4A70"/>
+    </linearGradient>
+    
+    <!-- Gradient for Reverberations (peak tier - most intense) -->
+    <linearGradient id="reverbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A6B96"/>
+      <stop offset="50%" stop-color="#2A4A70"/>
+      <stop offset="100%" stop-color="#1D3557"/>
+    </linearGradient>
+    
+    <!-- Glow effect for intensity -->
+    <filter id="tierGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Soft shadow -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="3" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="offsetblur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Dreamy fog effect -->
+    <filter id="fog" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="600" fill="#FDFBF7"/>
+  
+  <!-- Subtle background gradient for depth -->
+  <radialGradient id="bgDepth" cx="50%" cy="30%" r="80%">
+    <stop offset="0%" stop-color="#FDFBF7"/>
+    <stop offset="100%" stop-color="#E8D5B7" stop-opacity="0.3"/>
+  </radialGradient>
+  <rect width="700" height="600" fill="url(#bgDepth)"/>
+  
+  <!-- Title -->
+  <text x="350" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#2B2D42" font-weight="bold">THE NIGHTMARE PYRAMID</text>
+  <text x="350" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#6D6875" font-style="italic">Escalation from subtle whispers to world-shaking reverberations</text>
+  
+  <!-- === PYRAMID STRUCTURE === -->
+  
+  <!-- BASE TIER: WHISPERS -->
+  <g transform="translate(100, 400)" filter="url(#softShadow)">
+    <!-- Tier shape: wide base -->
+    <polygon points="0,100 250,100 225,0 25,0" fill="url(#whispersGrad)" stroke="#3D5A80" stroke-width="2"/>
+    
+    <!-- Decorative fog effect lines -->
+    <path d="M40,20 Q70,35 100,20 T160,20 T210,20" fill="none" stroke="#98C1D9" stroke-width="1.5" opacity="0.4"/>
+    <path d="M50,40 Q90,55 130,40 T190,40" fill="none" stroke="#98C1D9" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Card count badge -->
+    <circle cx="125" cy="50" r="28" fill="#FDFBF7" stroke="#3D5A80" stroke-width="2"/>
+    <text x="125" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#1D3557" font-weight="bold">10</text>
+    <text x="125" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#3D5A80">CARDS</text>
+    
+    <!-- Tier label -->
+    <text x="125" y="85" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#FDFBF7" font-weight="bold">WHISPERS</text>
+    
+    <!-- Icon: subtle/quiet -->
+    <g transform="translate(30, 25)" fill="none" stroke="#FDFBF7" stroke-width="1.5" opacity="0.7">
+      <path d="M0,10 Q8,2 16,10 Q24,18 32,10"/>
+      <path d="M5,18 Q13,10 21,18 Q29,26 37,18"/>
+    </g>
+    
+    <!-- Right side icon -->
+    <g transform="translate(200, 25)" fill="none" stroke="#FDFBF7" stroke-width="1.5" opacity="0.7">
+      <circle cx="10" cy="12" r="6"/>
+      <path d="M10,6 L10,2 M16,12 L20,12 M10,18 L10,22 M4,12 L0,12"/>
+    </g>
+  </g>
+  
+  <!-- MIDDLE TIER: ECHOES -->
+  <g transform="translate(150, 260)" filter="url(#softShadow)">
+    <!-- Tier shape: middle width -->
+    <polygon points="0,100 200,100 180,0 20,0" fill="url(#echoesGrad)" stroke="#2A4A70" stroke-width="2"/>
+    
+    <!-- More intense effect lines -->
+    <path d="M35,25 Q65,45 100,25 T165,25" fill="none" stroke="#98C1D9" stroke-width="2" opacity="0.5"/>
+    <path d="M45,50 Q90,70 135,50" fill="none" stroke="#98C1D9" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Card count badge -->
+    <circle cx="100" cy="50" r="30" fill="#FDFBF7" stroke="#2A4A70" stroke-width="2.5"/>
+    <text x="100" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#1D3557" font-weight="bold">12</text>
+    <text x="100" y="63" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#3D5A80">CARDS</text>
+    
+    <!-- Tier label -->
+    <text x="100" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#FDFBF7" font-weight="bold">ECHOES</text>
+    
+    <!-- Icon: echo waves -->
+    <g transform="translate(25, 20)" fill="none" stroke="#FDFBF7" stroke-width="2" opacity="0.8">
+      <circle cx="12" cy="15" r="4" fill="#FDFBF7" fill-opacity="0.3"/>
+      <circle cx="12" cy="15" r="10"/>
+      <circle cx="12" cy="15" r="16"/>
+    </g>
+    
+    <!-- Right side icon -->
+    <g transform="translate(155, 20)" fill="none" stroke="#FDFBF7" stroke-width="2" opacity="0.8">
+      <path d="M5,5 L20,15 L5,25" fill="#FDFBF7" fill-opacity="0.3"/>
+      <path d="M20,5 L35,15 L20,25" fill="#FDFBF7" fill-opacity="0.2"/>
+    </g>
+  </g>
+  
+  <!-- PEAK TIER: REVERBERATIONS -->
+  <g transform="translate(200, 120)" filter="url(#softShadow)">
+    <!-- Tier shape: narrow peak -->
+    <polygon points="0,100 150,100 135,0 15,0" fill="url(#reverbGrad)" stroke="#1D3557" stroke-width="2"/>
+    
+    <!-- Intense visual effects -->
+    <path d="M30,30 Q55,50 75,30 T120,30" fill="none" stroke="#98C1D9" stroke-width="2.5" opacity="0.6"/>
+    <path d="M40,55 Q75,75 110,55" fill="none" stroke="#D62828" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Spikes/tension marks -->
+    <g stroke="#D62828" stroke-width="1.5" opacity="0.5">
+      <line x1="20" y1="20" x2="15" y2="12"/>
+      <line x1="130" y1="20" x2="135" y2="12"/>
+      <line x1="75" y1="15" x2="75" y2="5"/>
+    </g>
+    
+    <!-- Card count badge -->
+    <circle cx="75" cy="52" r="32" fill="#FDFBF7" stroke="#1D3557" stroke-width="3" filter="url(#tierGlow)"/>
+    <text x="75" y="47" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#1D3557" font-weight="bold">8+</text>
+    <text x="75" y="67" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#3D5A80">CARDS</text>
+    
+    <!-- Tier label -->
+    <text x="75" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#FDFBF7" font-weight="bold">REVERBERATIONS</text>
+    
+    <!-- Icon: intense energy -->
+    <g transform="translate(20, 18)" fill="#FDFBF7" fill-opacity="0.9">
+      <path d="M10,0 L15,12 L28,12 L18,20 L22,32 L10,24 L-2,32 L2,20 L-8,12 L5,12 Z" transform="scale(0.6) translate(10,5)"/>
+    </g>
+    
+    <!-- Right side icon -->
+    <g transform="translate(115, 18)" fill="#FDFBF7" fill-opacity="0.9">
+      <path d="M8,0 L12,0 L16,12 L24,12 L12,28 L0,12 L8,12 Z" transform="translate(0,2)"/>
+    </g>
+  </g>
+  
+  <!-- === SIDE LEGEND: TIER DETAILS === --
+  
+  <!-- Whispers Legend -->
+  <g transform="translate(480, 140)">
+    <rect x="0" y="0" width="180" height="100" rx="8" fill="#FDFBF7" stroke="#98C1D9" stroke-width="1"/>
+    
+    <text x="10" y="22" font-family="Georgia, serif" font-size="14" fill="#1D3557" font-weight="bold">🔺 TIER I: WHISPERS</text>
+    
+    <text x="10" y="42" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Threat: Low</text>
+    <text x="10" y="58" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Fray Tokens: 3–4 🧿</text>
+    <text x="10" y="74" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Corruption: 1 tile</text>
+    <text x="10" y="90" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• VP: 2 🕊️ when purified</text>
+  </g>
+  
+  <!-- Echoes Legend -->
+  <g transform="translate(480, 260)">
+    <rect x="0" y="0" width="180" height="100" rx="8" fill="#FDFBF7" stroke="#3D5A80" stroke-width="1.5"/>
+    
+    <text x="10" y="22" font-family="Georgia, serif" font-size="14" fill="#1D3557" font-weight="bold">🔺 TIER II: ECHOES</text>
+    
+    <text x="10" y="42" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Threat: Medium</text>
+    <text x="10" y="58" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Fray Tokens: 2–3 🧿</text>
+    <text x="10" y="74" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Corruption: 2 tiles</text>
+    <text x="10" y="90" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• VP: 4 🕊️ when purified</text>
+  </g>
+  
+  <!-- Reverberations Legend --
+  >
+  <g transform="translate(480, 380)">
+    <rect x="0" y="0" width="180" height="120" rx="8" fill="#FDFBF7" stroke="#1D3557" stroke-width="2"/>
+    
+    <text x="10" y="22" font-family="Georgia, serif" font-size="13" fill="#1D3557" font-weight="bold">🔺 TIER III: REVERBERATIONS</text>
+    
+    <text x="10" y="42" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Threat: High</text>
+    <text x="10" y="58" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Fray Tokens: 2 🧿 (mini-boss)</text>
+    <text x="10" y="74" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• Corruption: 3 tiles</text>
+    <text x="10" y="90" font-family="Georgia, serif" font-size="10" fill="#3D5A80">• VP: 8 🕊️ when purified</text>
+    
+    <rect x="10" y="98" width="160" height="16" rx="3" fill="#D62828" fill-opacity="0.1"/>
+    <text x="90" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#D62828" font-weight="bold">"Collapse Loop" Danger!</text>
+  </g>
+  
+  <!-- === BOTTOM INFO BAR === --
+  
+  <!-- Escalation arrow -->
+  <g transform="translate(80, 530)">
+    <text x="0" y="0" font-family="Georgia, serif" font-size="12" fill="#6D6875" font-style="italic">Visual Intensity →</text>
+    
+    <!-- Intensity gradient bar -->
+    <rect x="120" y="-12" width="350" height="16" rx="8" fill="url(#intensityGrad)" stroke="#6D6875" stroke-width="1"/>
+    
+    <defs>
+      <linearGradient id="intensityGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#98C1D9"/>
+        <stop offset="50%" stop-color="#3D5A80"/>
+        <stop offset="100%" stop-color="#1D3557"/>
+      </linearGradient>
+    </defs>
+    
+    <text x="240" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#FDFBF7" font-weight="bold">SUBTLE → INTENSE</text>
+  </g>
+  
+  <!-- Total deck info --
+  <g transform="translate(480, 530)">
+    <rect x="0" y="-20" width="140" height="45" rx="6" fill="#F4E4C1" fill-opacity="0.4" stroke="#D4A574" stroke-width="1"/>
+    <text x="70" y="-5" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2B2D42" font-weight="bold">TOTAL DECK</text>
+    
+    <text x="70" y="15" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#1D3557" font-weight="bold">30+ Cards</text>
+  </g>
+  
+  <!-- Footer quote --
+  <text x="350" y="585" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#6D6875" font-style="italic">
+    "As tension rises, the nightmares grow louder... from whispers to echoes to world-shaking reverberations."
+  </text>
+</svg>

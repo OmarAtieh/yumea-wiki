@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+  <defs>
+    <!-- Watercolor filter -->
+    <filter id="watercolor" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <!-- Soft glow -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Gradients for game phases -->
+    <linearGradient id="earlyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B7"/>
+      <stop offset="50%" stop-color="#F4E4C1"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+    
+    <linearGradient id="midGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2CC8F"/>
+      <stop offset="50%" stop-color="#E07A5F"/>
+      <stop offset="100%" stop-color="#D62828"/>
+    </linearGradient>
+    
+    <linearGradient id="lateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D5A80"/>
+      <stop offset="50%" stop-color="#1D3557"/>
+      <stop offset="100%" stop-color="#2E1A47"/>
+    </linearGradient>
+    
+    <linearGradient id="harmonyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#6D6875"/>
+    </linearGradient>
+    
+    <linearGradient id="tensionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2CC8F"/>
+      <stop offset="100%" stop-color="#E07A5F"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="#FDFBF7"/>
+  
+  <!-- Large watercolor washes -->
+  <ellipse cx="200" cy="350" rx="180" ry="200" fill="#E8D5B7" opacity="0.25" filter="url(#watercolor)"/>
+  <ellipse cx="450" cy="250" rx="150" ry="180" fill="#E07A5F" opacity="0.15" filter="url(#watercolor)"/>
+  <ellipse cx="700" cy="350" rx="180" ry="200" fill="#3D5A80" opacity="0.2" filter="url(#watercolor)"/>
+  
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#2B2D42" font-weight="bold">Game Progression Arc</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6D6875" font-style="italic">How the dreamscape evolves from dawn to climax</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowRight" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#6D6875"/>
+    </marker>
+  </defs>
+  
+  <!-- ============ PHASE 1: EARLY GAME ============ -->
+  <g transform="translate(180, 320)">
+    <!-- Background wash -->
+    <ellipse cx="0" cy="0" rx="130" ry="180" fill="url(#earlyGrad)" opacity="0.3" filter="url(#watercolor)"/>
+    
+    <!-- Main container -->
+    <rect x="-110" y="-150" width="220" height="300" rx="15" fill="url(#earlyGrad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-110" y="-150" width="220" height="300" rx="15" fill="none" stroke="#D4A574" stroke-width="2"/>
+    
+    <!-- Phase header -->
+    <text x="0" y="-120" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2B2D42" font-weight="bold">🌅 EARLY GAME</text>
+    <text x="0" y="-100" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#6D6875" font-style="italic">The Fog Phase</text>
+    
+    <!-- Content -->
+    <text x="0" y="-70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2B2D42" font-weight="bold">Focus: Building</text>
+    
+    <text x="-90" y="-40" font-family="sans-serif" font-size="10" fill="#2B2D42">• Establish board presence</text>
+    <text x="-90" y="-22" font-family="sans-serif" font-size="10" fill="#2B2D42">• Place opening tiles</text>
+    <text x="-90" y="-4" font-family="sans-serif" font-size="10" fill="#2B2D42">• Complete 1-2 small anchors</text>
+    <text x="-90" y="14" font-family="sans-serif" font-size="10" fill="#2B2D42">• Generate initial energy</text>
+    
+    <text x="0" y="45" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-weight="bold">Board State</text>
+    <text x="0" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">~30% filled • Low tension</text>
+    <text x="0" y="76" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">Few Whispers • No boss</text>
+    
+    <!-- Emotional tone -->
+    <text x="0" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#D4A574" font-style="italic">"Hope dawning"</text>
+  </g>
+  
+  <!-- Arrow between phases -->
+  <line x1="310" y1="320" x2="340" y2="320" stroke="#6D6875" stroke-width="3" marker-end="url(#arrowRight)" opacity="0.7"/>
+  
+  <!-- ============ PHASE 2: MID GAME ============ -->
+  <g transform="translate(450, 320)">
+    <!-- Background wash -->
+    <ellipse cx="0" cy="0" rx="130" ry="180" fill="url(#midGrad)" opacity="0.3" filter="url(#watercolor)"/>
+    
+    <!-- Main container -->
+    <rect x="-110" y="-150" width="220" height="300" rx="15" fill="url(#midGrad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-110" y="-150" width="220" height="300" rx="15" fill="none" stroke="#E07A5F" stroke-width="2"/>
+    
+    <!-- Phase header -->
+    <text x="0" y="-120" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2B2D42" font-weight="bold">🔥 MID GAME</text>
+    <text x="0" y="-100" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#6D6875" font-style="italic">The Emergence Phase</text>
+    
+    <!-- Content -->
+    <text x="0" y="-70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2B2D42" font-weight="bold">Focus: Escalation</text>
+    
+    <text x="-90" y="-40" font-family="sans-serif" font-size="10" fill="#2B2D42">• Build medium anchors</text>
+    <text x="-90" y="-22" font-family="sans-serif" font-size="10" fill="#2B2D42">• Manage nightmare fray</text>
+    <text x="-90" y="-4" font-family="sans-serif" font-size="10" fill="#2B2D42">• Purify spreading corruption</text>
+    <text x="-90" y="14" font-family="sans-serif" font-size="10" fill="#2B2D42">• Coordinate with players</text>
+    
+    <text x="0" y="45" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-weight="bold">Board State</text>
+    <text x="0" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">~60% filled • Rising tension</text>
+    <text x="0" y="76" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">Echoes appear • Deck shrinks</text>
+    
+    <!-- Emotional tone -->
+    <text x="0" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#E07A5F" font-style="italic">"The struggle intensifies"</text>
+  </g>
+  
+  <!-- Arrow between phases -->
+  <line x1="580" y1="320" x2="610" y2="320" stroke="#6D6875" stroke-width="3" marker-end="url(#arrowRight)" opacity="0.7"/>
+  
+  <!-- ============ PHASE 3: LATE GAME ============ -->
+  <g transform="translate(720, 320)">
+    <!-- Background wash -->
+    <ellipse cx="0" cy="0" rx="130" ry="180" fill="url(#lateGrad)" opacity="0.25" filter="url(#watercolor)"/>
+    
+    <!-- Main container -->
+    <rect x="-110" y="-150" width="220" height="300" rx="15" fill="url(#lateGrad)" opacity="0.9" filter="url(#softGlow)"/>
+    <rect x="-110" y="-150" width="220" height="300" rx="15" fill="none" stroke="#3D5A80" stroke-width="2"/>
+    
+    <!-- Phase header -->
+    <text x="0" y="-120" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#FDFBF7" font-weight="bold">🌑 LATE GAME</text>
+    <text x="0" y="-100" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#98C1D9" font-style="italic">The Resonance Phase</text>
+    
+    <!-- Content -->
+    <text x="0" y="-70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#FDFBF7" font-weight="bold">Focus: Climax</text>
+    
+    <text x="-90" y="-40" font-family="sans-serif" font-size="10" fill="#FDFBF7">• Complete large anchors</text>
+    <text x="-90" y="-22" font-family="sans-serif" font-size="10" fill="#FDFBF7">• Defeat the Boss nightmare</text>
+    <text x="-90" y="-4" font-family="sans-serif" font-size="10" fill="#FDFBF7">• Maximize final harmony</text>
+    <text x="-90" y="14" font-family="sans-serif" font-size="10" fill="#FDFBF7">• Use ultimates &amp; lucid moments</text>
+    
+    <text x="0" y="45" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#98C1D9" font-weight="bold">Board State</text>
+    <text x="0" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9">~90% filled • Peak tension</text>
+    <text x="0" y="76" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9">Boss active • Reverberations</text>
+    
+    <!-- Emotional tone -->
+    <text x="0" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#98C1D9" font-style="italic">"The final confrontation"</text>
+  </g>
+  
+  <!-- ============ TENSION CURVE ============ -->
+  <g transform="translate(450, 530)">
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#2B2D42" font-weight="bold">Tension Curve Over Time</text>
+    
+    <!-- Graph background -->
+    <rect x="-350" y="15" width="700" height="80" rx="5" fill="#F4E4C1" opacity="0.3"/>
+    
+    <!-- Axes -->
+    <line x1="-330" y1="85" x2="330" y2="85" stroke="#6D6875" stroke-width="1.5"/>
+    <line x1="-330" y1="85" x2="-330" y2="20" stroke="#6D6875" stroke-width="1.5"/>
+    
+    <!-- Y-axis label -->
+    <text x="-355" y="55" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" transform="rotate(-90 -355 55)">Threat Level</text>
+    
+    <!-- X-axis labels -->
+    <text x="-275" y="100" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#D4A574">Fog</text>
+    <text x="0" y="100" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#E07A5F">Emergence</text>
+    <text x="275" y="100" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#3D5A80">Resonance</text>
+    
+    <!-- Tension curve -->
+    <path d="M -330 75 Q -200 70 -100 60 T 100 45 T 330 25" stroke="#E07A5F" stroke-width="3" fill="none" opacity="0.8"/>
+    <path d="M -330 75 Q -200 70 -100 60 T 100 45 T 330 25 L 330 85 L -330 85 Z" fill="url(#tensionGrad)" opacity="0.2"/>
+    
+    <!-- Harmony curve (inverse) -->
+    <path d="M -330 80 Q -200 75 0 55 T 330 30" stroke="#D4A574" stroke-width="2" fill="none" stroke-dasharray="4,3" opacity="0.7"/>
+    <text x="340" y="35" font-family="sans-serif" font-size="8" fill="#D4A574">Harmony potential</text>
+    
+    <!-- Phase markers -->
+    <line x1="-165" y1="20" x2="-165" y2="90" stroke="#6D6875" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+    <line x1="165" y1="20" x2="165" y2="90" stroke="#6D6875" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="120" r="25" fill="#E8D5B7" opacity="0.3" filter="url(#watercolor)"/>
+  <circle cx="820" cy="500" r="30" fill="#3D5A80" opacity="0.2" filter="url(#watercolor)"/>
+</svg>

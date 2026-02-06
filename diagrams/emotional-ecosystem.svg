@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <!-- Watercolor filter -->
+    <filter id="watercolor" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    
+    <!-- Soft glow -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Gradient definitions -->
+    <linearGradient id="fearGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2E1A47"/>
+      <stop offset="100%" stop-color="#3D5A80"/>
+    </linearGradient>
+    
+    <linearGradient id="courageGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#F4E4C1"/>
+    </linearGradient>
+    
+    <linearGradient id="despairGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3E7C88"/>
+      <stop offset="100%" stop-color="#98C1D9"/>
+    </linearGradient>
+    
+    <linearGradient id="hopeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8D5B7"/>
+      <stop offset="100%" stop-color="#F4E4C1"/>
+    </linearGradient>
+    
+    <linearGradient id="chaosGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C1440E"/>
+      <stop offset="100%" stop-color="#E07A5F"/>
+    </linearGradient>
+    
+    <linearGradient id="balanceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6D6875"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+    
+    <linearGradient id="isolationGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6A5B8A"/>
+      <stop offset="100%" stop-color="#98C1D9"/>
+    </linearGradient>
+    
+    <linearGradient id="connectionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="100%" stop-color="#E8D5B7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#FDFBF7"/>
+  
+  <!-- Large watercolor washes -->
+  <ellipse cx="200" cy="350" rx="180" ry="250" fill="#3D5A80" opacity="0.1" filter="url(#watercolor)"/>
+  <ellipse cx="700" cy="350" rx="180" ry="250" fill="#D4A574" opacity="0.15" filter="url(#watercolor)"/>
+  <ellipse cx="450" cy="580" rx="300" ry="80" fill="#E8D5B7" opacity="0.2" filter="url(#watercolor)"/>
+  
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#2B2D42" font-weight="bold">Emotional Ecosystem</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6D6875" font-style="italic">The mirrored axis of fear and courage, despair and hope</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#E07A5F"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#D4A574"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3D5A80"/>
+    </marker>
+  </defs>
+  
+  <!-- EMOTION AXIS ROW 1: Fear ↔ Courage -->
+  <g transform="translate(450, 140)">
+    <!-- Fear side -->
+    <g transform="translate(-200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#fearGrad)" opacity="0.25" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#fearGrad)" opacity="0.85" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#2E1A47" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#FDFBF7" font-weight="bold">🕷️ FEAR</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#98C1D9">Nightmares • Corruption</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9" opacity="0.8">Anxiety • Dread • Threat</text>
+    </g>
+    
+    <!-- Arrow: Fear → Corruption -->
+    <line x1="-100" y1="50" x2="-50" y2="90" stroke="#E07A5F" stroke-width="2" marker-end="url(#arrowRed)" opacity="0.7"/>
+    
+    <!-- Central symbol -->
+    <text x="0" y="8" text-anchor="middle" font-size="30">⟷</text>
+    <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-style="italic">corrupts / restores</text>
+    
+    <!-- Courage side -->
+    <g transform="translate(200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#courageGrad)" opacity="0.3" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#courageGrad)" opacity="0.9" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#D4A574" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2B2D42" font-weight="bold">✨ COURAGE</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Purification • Anchors</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" opacity="0.8">Bravery • Action • Hope</text>
+    </g>
+    
+    <!-- Arrow: Courage → Harmony -->
+    <line x1="100" y1="50" x2="50" y2="90" stroke="#D4A574" stroke-width="2" marker-end="url(#arrowGold)" opacity="0.7"/>
+  </g>
+  
+  <!-- EMOTION AXIS ROW 2: Despair ↔ Hope -->
+  <g transform="translate(450, 280)">
+    <!-- Despair side -->
+    <g transform="translate(-200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#despairGrad)" opacity="0.25" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#despairGrad)" opacity="0.85" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#3E7C88" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#FDFBF7" font-weight="bold">🌫️ DESPAIR</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FDFBF7">Nightmares • Decay</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#E8D5B7" opacity="0.8">Hopelessness • Grief</text>
+    </g>
+    
+    <!-- Arrow: Despair → Corruption -->
+    <line x1="-100" y1="50" x2="-50" y2="90" stroke="#E07A5F" stroke-width="2" marker-end="url(#arrowRed)" opacity="0.7"/>
+    
+    <!-- Central symbol -->
+    <text x="0" y="8" text-anchor="middle" font-size="30">⟷</text>
+    <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-style="italic">overwhelms / inspires</text>
+    
+    <!-- Hope side -->
+    <g transform="translate(200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#hopeGrad)" opacity="0.3" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#hopeGrad)" opacity="0.9" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#E8D5B7" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2B2D42" font-weight="bold">🌈 HOPE</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Restoration • Growth</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" opacity="0.8">Optimism • Renewal • Light</text>
+    </g>
+    
+    <!-- Arrow: Hope → Harmony -->
+    <line x1="100" y1="50" x2="50" y2="90" stroke="#D4A574" stroke-width="2" marker-end="url(#arrowGold)" opacity="0.7"/>
+  </g>
+  
+  <!-- EMOTION AXIS ROW 3: Chaos ↔ Balance -->
+  <g transform="translate(450, 420)">
+    <!-- Chaos side -->
+    <g transform="translate(-200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#chaosGrad)" opacity="0.25" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#chaosGrad)" opacity="0.85" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#C1440E" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#FDFBF7" font-weight="bold">🔥 CHAOS</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FDFBF7">Disruption • Disorder</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#F4E4C1" opacity="0.8">Loss of control • Entropy</text>
+    </g>
+    
+    <!-- Arrow: Chaos → Corruption -->
+    <line x1="-100" y1="50" x2="-50" y2="90" stroke="#E07A5F" stroke-width="2" marker-end="url(#arrowRed)" opacity="0.7"/>
+    
+    <!-- Central symbol -->
+    <text x="0" y="8" text-anchor="middle" font-size="30">⟷</text>
+    <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-style="italic">destabilizes / centers</text>
+    
+    <!-- Balance side -->
+    <g transform="translate(200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#balanceGrad)" opacity="0.3" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#balanceGrad)" opacity="0.9" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#6D6875" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2B2D42" font-weight="bold">🌀 BALANCE</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Equilibrium • Focus</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" opacity="0.8">Clarity • Stability • Calm</text>
+    </g>
+    
+    <!-- Arrow: Balance → Harmony -->
+    <line x1="100" y1="50" x2="50" y2="90" stroke="#D4A574" stroke-width="2" marker-end="url(#arrowGold)" opacity="0.7"/>
+  </g>
+  
+  <!-- EMOTION AXIS ROW 4: Isolation ↔ Connection -->
+  <g transform="translate(450, 560)">
+    <!-- Isolation side -->
+    <g transform="translate(-200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#isolationGrad)" opacity="0.25" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#isolationGrad)" opacity="0.85" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#6A5B8A" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#FDFBF7" font-weight="bold">🪞 ISOLATION</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#FDFBF7">Separation • Loneliness</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9" opacity="0.8">Disconnection • Withdrawal</text>
+    </g>
+    
+    <!-- Arrow: Isolation → Corruption -->
+    <line x1="-100" y1="50" x2="-50" y2="80" stroke="#E07A5F" stroke-width="2" marker-end="url(#arrowRed)" opacity="0.7"/>
+    
+    <!-- Central symbol -->
+    <text x="0" y="8" text-anchor="middle" font-size="30">⟷</text>
+    <text x="0" y="35" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875" font-style="italic">divides / unites</text>
+    
+    <!-- Connection side -->
+    <g transform="translate(200, 0)">
+      <ellipse cx="0" cy="0" rx="90" ry="45" fill="url(#connectionGrad)" opacity="0.3" filter="url(#watercolor)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="url(#connectionGrad)" opacity="0.9" filter="url(#softGlow)"/>
+      <rect x="-80" y="-35" width="160" height="70" rx="10" fill="none" stroke="#D4A574" stroke-width="2"/>
+      
+      <text x="0" y="-8" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2B2D42" font-weight="bold">🤝 CONNECTION</text>
+      <text x="0" y="12" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#2B2D42">Cooperation • Unity</text>
+      <text x="0" y="26" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875" opacity="0.8">Togetherness • Support</text>
+    </g>
+    
+    <!-- Arrow: Connection → Harmony -->
+    <line x1="100" y1="50" x2="50" y2="80" stroke="#D4A574" stroke-width="2" marker-end="url(#arrowGold)" opacity="0.7"/>
+  </g>
+  
+  <!-- Central outcome boxes -->
+  <g transform="translate(450, 230)">
+    <!-- Negative outcome -->
+    <ellipse cx="-50" cy="200" rx="70" ry="30" fill="#3D5A80" opacity="0.2" filter="url(#watercolor)"/>
+    <rect x="-110" y="180" width="120" height="40" rx="8" fill="#3D5A80" opacity="0.85"/>
+    <text x="-50" y="198" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#FDFBF7" font-weight="bold">CORRUPTION</text>
+    <text x="-50" y="212" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#98C1D9">Tile destruction • Chaos</text>
+  </g>
+  
+  <g transform="translate(450, 230)">
+    <!-- Positive outcome -->
+    <ellipse cx="50" cy="200" rx="70" ry="30" fill="#D4A574" opacity="0.25" filter="url(#watercolor)"/>
+    <rect x="-10" y="180" width="120" height="40" rx="8" fill="#D4A574" opacity="0.9"/>
+    <text x="50" y="198" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2B2D42" font-weight="bold">HARMONY</text>
+    <text x="50" y="212" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6D6875">Restoration • Victory</text>
+  </g>
+  
+  <!-- Feedback loop annotation -->
+  <g transform="translate(450, 660)">
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2B2D42" font-weight="bold">The Cycle of Healing</text>
+    <text x="0" y="18" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6D6875">Each negative emotion has its counter • Purification requires emotional alignment</text>
+  </g>
+</svg>
