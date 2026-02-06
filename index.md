@@ -52,7 +52,7 @@ Every fear has its counter: Fear/Courage, Despair/Hope, Isolation/Connection, Ch
 ### Why This Matters
 
 Documented:
-- Promise to daughters
+- Carlie's dream stories (muse); game designer before SA; deeply personal
 - Three years of development
 - Carlie's validation a year later: "What happened to that dream game?"
 - Health score: 8.55/10 composite (Vision 9.0, Mechanics 8.5, Replayability 7.1)

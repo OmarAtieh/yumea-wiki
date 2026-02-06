@@ -90,12 +90,16 @@ Name meaning:
 
 ## The Origin
 
-Per Omar:
+Per Omar (verified 2026-02-06):
+- Game designer and perfectionist **before** Solution Architect career
+- Made many games with increasing complexity and intentionality
+- Months researching, playing, and thinking about board games after passion reignited
 - Carlie told him about her dreams every morning — bringing dreams to the foreground
+- Carlie is his muse — inspired the project
 - Having children
-- Fascination with game design
 - Goal: Something to play with wife and kids; share passion with the world
 - Personal, intentional, deeply integrating themes of dreams and emotions
+- Keeps coming back to Yumea when he has space because it carries weight and is deeply personal
 
 Three years of development: Dreams of Peace → Dreamscapers → Yumea
 
