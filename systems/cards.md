@@ -8,7 +8,7 @@
 
 Yumea uses multiple card decks, each serving distinct mechanical and emotional purposes:
 
-![Component Relationships](diagrams/component-relationships.svg)
+![Component Relationships](../diagrams/component-relationships.svg)
 *Cards feed into abilities that enable threat mitigation*
 
 | Deck | Purpose | Count | Status |

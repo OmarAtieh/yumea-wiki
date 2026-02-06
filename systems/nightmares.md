@@ -14,7 +14,7 @@ Nightmares in Yumea are **not monsters** in the traditional sense. They are:
 
 Nightmares embody the mirrored emotional axis:
 
-![Emotional Ecosystem](diagrams/emotional-ecosystem.svg)
+![Emotional Ecosystem](../diagrams/emotional-ecosystem.svg)
 *Each nightmare attribute feeds into corruption — each has a counter emotion for purification*
 
 | Nightmare Attribute | Represents | Counter Emotion |
@@ -24,7 +24,7 @@ Nightmares embody the mirrored emotional axis:
 | 🔥 Chaos | Disorder, loss of control | 🌀 Balance |
 | 🪞 Isolation | Loneliness, disconnection | 🤝 Connection |
 
-![Nightmare Tiers](diagrams/nightmare-pyramid.svg)
+![Nightmare Tiers](../diagrams/nightmare-pyramid.svg)
 *Escalation from subtle whispers to world-shaking reverberations*
 
 ---

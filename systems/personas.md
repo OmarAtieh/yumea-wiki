@@ -13,7 +13,7 @@ Yumea features **12 unique personas**, each representing a distinct emotional ar
 - **Affinity Bonus**: Optional advanced rule for emotional alignment bonuses
 - **Awakening**: Campaign/deluxe mode progression unlock
 
-![Emotional Ecosystem](diagrams/emotional-ecosystem.svg)
+![Emotional Ecosystem](../diagrams/emotional-ecosystem.svg)
 *The four mirrored emotional pairs — every nightmare has its anchor, every fear its courage*
 
 ---

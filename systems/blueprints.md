@@ -11,7 +11,7 @@
 - **Memory stabilization** — grounding elements in the dreamer's psyche
 - **Strategic objectives** — primary scoring and bonus mechanisms
 
-![Component Relationships](diagrams/component-relationships.svg)
+![Component Relationships](../diagrams/component-relationships.svg)
 *How tiles build harmony, complete blueprints, and activate anchor bonuses*
 
 **Blueprints** are the pattern recipes that define how to build anchors.

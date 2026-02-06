@@ -6,7 +6,7 @@
 
 ## Loop Overview
 
-![Turn Structure](diagrams/turn-structure.svg)
+![Turn Structure](../diagrams/turn-structure.svg)
 *Phase by phase through the dreamscape: from tile placement to dream phase progression*
 
 ```
@@ -54,14 +54,14 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-![Core Loop](diagrams/core-loop.svg)
+![Core Loop](../diagrams/core-loop.svg)
 *The circular flow of a turn: creation → tension → response → renewal*
 
 ---
 
 ## Phase 1: Tile Draw & Placement
 
-![Game Progression](diagrams/progression-arc.svg)
+![Game Progression](../diagrams/progression-arc.svg)
 *How the game evolves from early building through climactic confrontation*
 
 ### Tile Types

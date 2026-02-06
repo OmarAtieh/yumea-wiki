@@ -65,7 +65,7 @@ xdg-open core-loop.svg
 ### Embedding in Markdown
 
 ```markdown
-![Core Loop](diagrams/core-loop.svg)
+![Core Loop](core-loop.svg)
 *The emotional arc of a turn: choice → consequence → collaboration*
 ```
 
