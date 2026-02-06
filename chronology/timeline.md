@@ -21,7 +21,7 @@ Birth     Framework      Rebrand         Ready              Ready
 
 ### v0.1 — "Dreams of Peace" (2023)
 
-**Context**: Omar's personal project. Carlie told him about her dreams every morning, bringing the topic to the foreground. Combined with having children and fascination with game design, the seed emerged: something to play with wife and kids, and share passion with the world. Early sketches of homemade games from childhood reimagined for family play.
+**Context**: Omar's personal project. Omar was a game designer and perfectionist before becoming a Solution Architect — made many games with increasing complexity, spent months researching board games after passion reignited. Carlie (his muse) told him about her dreams every morning, bringing the topic to the foreground. Combined with having children, the seed emerged: something to play with wife and kids, and share passion with the world. Early sketches of homemade games from childhood reimagined for family play.
 
 **What Was Introduced**:
 - Core concept: Dreams as a board game theme
