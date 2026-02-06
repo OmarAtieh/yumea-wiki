@@ -1,7 +1,6 @@
 # Yumea Wiki
 
-> *A cooperative board game about healing through dreams.*  
-> *Three years in the making. A promise to my daughters.*
+> *A cooperative board game about healing through dreams.*
 
 ---
 

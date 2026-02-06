@@ -1,8 +1,8 @@
 # Yumea Chronology
 
-## The Journey from Promise to Game
+## The Journey
 
-This section documents Yumea's complete development history — from bedtime stories for Jenin to the current v0.3 systems-locked state.
+This section documents Yumea's complete development history.
 
 ---
 
@@ -11,7 +11,7 @@ This section documents Yumea's complete development history — from bedtime sto
 For the detailed version history with dates, see **[timeline.md](timeline.md)**.
 
 Quick overview:
-- **2023**: Origin — The promise to Jenin; Dreams of Peace concept
+- **2023**: Origin — Carlie's morning dream stories; Dreams of Peace concept
 - **2024**: Framework Lock — Dreamscapers branding; 12 personas defined
 - **Early 2025**: Rebrand — Yumea v0.3; systems consolidated
 - **May 2025**: Art Direction — Visual language locked
@@ -22,8 +22,8 @@ Quick overview:
 
 ## The Full Journey
 
-For the narrative version with emotional beats and pivot points, see **[journey.md](journey.md)**.
+For the narrative version with pivot points, see **[journey.md](journey.md)**.
 
 ---
 
-*The story of a promise kept, three years in the making.*
+*Three years in the making.*

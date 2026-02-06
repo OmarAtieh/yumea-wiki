@@ -90,11 +90,16 @@ Name meaning:
 
 ## The Origin
 
-Per documented sources:
-- Started with promise to daughter Jenin (born 2023)
-- Bedtime stories about a place where dreams were built
-- Three years of development: Dreams of Peace → Dreamscapers → Yumea
-- Carlie's unprompted validation a year later: "What happened to that dream game?"
+Per Omar:
+- Carlie told him about her dreams every morning — bringing dreams to the foreground
+- Having children
+- Fascination with game design
+- Goal: Something to play with wife and kids; share passion with the world
+- Personal, intentional, deeply integrating themes of dreams and emotions
+
+Three years of development: Dreams of Peace → Dreamscapers → Yumea
+
+Carlie's unprompted validation a year later: "What happened to that dream game?"
 
 ---
 

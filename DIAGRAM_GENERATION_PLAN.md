@@ -40,7 +40,7 @@
 #### Game Version Timeline
 **What:** v0.1 → v0.2 → v0.3 → v0.4
 **Elements:**
-- 2023: Dreams of Peace (family promise origin)
+- 2023: Dreams of Peace (origin: Carlie's dream stories, family play)
 - 2024: Dreamscapers framework (12 personas locked)
 - 2025: Yumea rebrand (systems consolidated)
 - Target: Playtest-ready (PnP kit)

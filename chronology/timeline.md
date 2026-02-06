@@ -21,7 +21,7 @@ Birth     Framework      Rebrand         Ready              Ready
 
 ### v0.1 — "Dreams of Peace" (2023)
 
-**Context**: Omar's personal project born from a promise to his daughters. Early sketches of homemade games from childhood reimagined for family play.
+**Context**: Omar's personal project. Carlie told him about her dreams every morning, bringing the topic to the foreground. Combined with having children and fascination with game design, the seed emerged: something to play with wife and kids, and share passion with the world. Early sketches of homemade games from childhood reimagined for family play.
 
 **What Was Introduced**:
 - Core concept: Dreams as a board game theme
@@ -175,7 +175,7 @@ Birth     Framework      Rebrand         Ready              Ready
 
 | Date | Document | Key Content |
 |------|----------|-------------|
-| 2023-04-16 | `vaults/omar/family/2023-04-16-jenin_s-dream-song.md` | Origins in family promise |
+| 2023-04-16 | `vaults/omar/family/2023-04-16-jenin_s-dream-song.md` | Origins: Carlie's dreams, family play |
 | 2024-02-23 | `vaults/omar/insights/2024-02-23-dreams-of-peace-portrait.md` | Early concept art/style |
 | 2024-10-03 | `vaults/omar/projects/2024-10-03-dreamscapers-art-style-ideas.md` | Art direction foundation |
 | 2025-04-09 | `vaults/omar/business/2025-04-09-dreamscapers-macro-plan.md` | Production planning begins |
@@ -193,7 +193,7 @@ Birth     Framework      Rebrand         Ready              Ready
 
 ## Lessons from Chronology
 
-1. **Emotional Core Never Changed**: From 2023 to 2025, the promise to family and focus on healing remained constant
+1. **Emotional Core Never Changed**: From 2023 to 2025, the focus on family play and healing remained constant
 2. **Names Evolve, Systems Consolidate**: External branding changed; internal systems refined but preserved
 3. **Perfectionism is the Enemy**: Multiple iterations on energy caps, draw rules, anchor scoring — all refinements without playtest data
 4. **Validation Pattern**: Carlie's approval as north star; market signals secondary to intimate user testing
